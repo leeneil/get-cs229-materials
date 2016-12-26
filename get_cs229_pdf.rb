@@ -5,7 +5,7 @@ root_url = "http://cs229.stanford.edu/"
 
 html = open(material_url).read
 
-pat1 = /"(http:\/\/cs229.stanford.edu\/)?([\d\w_\/-]+\.pdf)"/
+pat1 = /"(http:\/\/cs229.stanford.edu\/)?([\d\w_\/\-]+\.pdf)"/
 links = html.scan(pat1).to_a
 
 dir_name = "files/"
